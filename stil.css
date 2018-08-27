@@ -1,0 +1,124 @@
+@font-face {
+    font-family: meltdown;
+    src: url(MeltdownMF.ttf);
+}
+
+@font-face {
+  font-family: 'Lobster';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lobster Regular'), local('Lobster-Regular'), url(https://fonts.gstatic.com/s/lobster/v20/neILzCirqoswsqX9zoKmMw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+    font-family: panpizza;
+    src: url(panpizza.ttf);
+}
+
+html{
+  font-size: 16px;
+}
+.header{
+  font-size: 40px;
+  font-family: meltdown;
+  color:hsla(36, 100%, 50%,0.7);
+  text-align: center;
+  background-image: url(Pizza.jpg);
+  background-size: 500px;
+  width: auto;
+  height: 300px;
+  border: 2px solid hsla(0, 100%, 0%,0.3);
+  width: auto;
+}
+.header .title{
+  position: relative;
+  top: 50px;
+  left: 5px;
+  padding: 10px;
+  font-size: 80px;
+
+}
+
+.Pizza{
+  margin: 40px;
+  text-align: center;
+  font-family: panpizza;
+  border: 3px solid black;
+  padding: 10px;
+  font-size: 3rem;
+  background-color: HSLA(192, 26%, 76%,0.5);
+}
+.Pizza h2{
+  font-weight: bold;
+
+}
+#pizzarecipe{
+  margin: 40px;
+  text-align: center;
+  border-style: double;
+  border: 2px double hsla(0, 0%, 0%,0.5);
+  padding: 10px;
+  font-family: meltdown;
+  color: #e65c00;
+  font-size: 4rem;
+  font-weight: 400;
+  background-color:skyblue;
+  width:auto;
+}
+.recipeP {
+  border: 2px solid 	hsla(24, 100%, 55%,0.5);
+  background-color: 	hsla(24, 100%, 55%,0.5);
+  color: #4d79ff;
+  margin: 30px;
+  text-align: center;
+  font-family: lobster;
+  padding: 10px;
+}
+.footer{
+  text-align: center;
+  border: 2px solid black;
+  padding: 15px;
+  font-family: lobster;
+  background-color:hsl(270, 100%, 75%);
+}
+.footer a{
+  display: block;
+}
+.soup{
+  font-family: Lobster;
+  text-align:center;
+  font-size: 30px;
+  border: 2px solid black;
+  margin: 40px;
+  background-color: 	hsl(60, 100%, 70%);
+}
+
+
+.recipeS{
+  text-align: center;
+  font-size: 25px;
+  font-family: panpizza;
+  border: 2px solid black;
+  padding: 10px;
+  margin: 40px;
+  background-color:#ff6666;
+  color:#00cccc;
+}
+#souprecipe{
+  margin: 40px;
+  text-align: center;
+  border-style: double;
+  border: 2px solid hsla(0, 0% ,20% ,0.3);
+  padding: 10px;
+  font-family: meltdown;
+  color: #ffff4d;
+  font-size: 4rem;
+  font-weight: 400;
+  background-color:#66c2ff;
+}
+.noodle {
+  height: 300px;
+  align: left;
+  border: 2px solid black;
+  margin: 10px;
+}
