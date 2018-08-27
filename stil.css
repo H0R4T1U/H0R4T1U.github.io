@@ -127,8 +127,8 @@ html{
   margin: 10px;
 }
 .pizzaphoto{
-  width: 30%;
-  height: 150px;
+  width: 50%;
+  height: 300px;
   border: 1px solid hsla(24, 100%, 55%,0.5);
 }
 
@@ -140,7 +140,7 @@ html{
 }
 @media only screen and (max-width: 720px){
   html{
-    width: 100%;
+    width: 90%;
     height: 80%;
   }
 }
