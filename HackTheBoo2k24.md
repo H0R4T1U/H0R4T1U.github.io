@@ -31,7 +31,11 @@ We filter for http only and we start analyzing
 we see there is an interesting packet that is base64 encoded
 ![alt text](images/hacktheboo2k24/intrusion1.png)
 ```powershell
-powershell.exe -C "$output = Get-ChildItem -Path C:; $bytes = [Text.Encoding]::UTF8.GetBytes($output); $compressedStream = [System.IO.MemoryStream]::new(); $compressor = [System.IO.Compression.DeflateStream]::new($compressedStream, [System.IO.Compression.CompressionMode]::Compress); $compressor.Write($bytes, 0, $bytes.Length); $compressor.Close(); $compressedBytes = $compressedStream.ToArray(); [Convert]::ToBase64String($compressedBytes)"powershell.exe -C "$output = Get-ChildItem -Path C:; $bytes = [Text.Encoding]::UTF8.GetBytes($output); $compressedStream = [System.IO.MemoryStream]::new(); $compressor = [System.IO.Compression.DeflateStream]::new($compressedStream, [System.IO.Compression.CompressionMode]::Compress); $compressor.Write($bytes, 0, $bytes.Length); $compressor.Close(); $compressedBytes = $compressedStream.ToArray(); [Convert]::ToBase64String($compressedBytes)"
+powershell.exe -C "$output = Get-ChildItem -Path C:; $bytes = [Text.Encoding]::UTF8.GetBytes($output);
+ $compressedStream = [System.IO.MemoryStream]::new(); 
+ $compressor = [System.IO.Compression.DeflateStream]::new($compressedStream, [System.IO.Compression.CompressionMode]::Compress); 
+ $compressor.Write($bytes, 0, $bytes.Length); $compressor.Close(); 
+ $compressedBytes = $compressedStream.ToArray(); [Convert]::ToBase64String($compressedBytes)"
 ```
 now its clear that the attacker used an rce vulnerability read files and encrypted them.
 ![alt text](images/hacktheboo2k24/intrusion2.png)
